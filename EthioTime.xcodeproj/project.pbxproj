@@ -22,6 +22,8 @@
 		D78A1CE2187AE4800071F2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CC1187AE47E0071F2AA /* UIKit.framework */; };
 		D78A1CEA187AE4800071F2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CE8187AE4800071F2AA /* InfoPlist.strings */; };
 		D78A1CEC187AE4800071F2AA /* EthioTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A1CEB187AE4800071F2AA /* EthioTimeTests.m */; };
+		D7C287E7187D8F8D00D1DD22 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C287E6187D8F8D00D1DD22 /* Utils.m */; };
+		D7C287EA187D9DBA00D1DD22 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C287E9187D9DBA00D1DD22 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		D78A1CE7187AE4800071F2AA /* EthioTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EthioTimeTests-Info.plist"; sourceTree = "<group>"; };
 		D78A1CE9187AE4800071F2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D78A1CEB187AE4800071F2AA /* EthioTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthioTimeTests.m; sourceTree = "<group>"; };
+		D7C287E5187D8F8D00D1DD22 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Utils/Utils.h; sourceTree = "<group>"; };
+		D7C287E6187D8F8D00D1DD22 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Utils/Utils.m; sourceTree = "<group>"; };
+		D7C287E9187D9DBA00D1DD22 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,8 @@
 				D78A1CD5187AE4800071F2AA /* InitialViewController.h */,
 				D78A1CD6187AE4800071F2AA /* InitialViewController.m */,
 				D78A1CD8187AE4800071F2AA /* Images.xcassets */,
+				D7C287E8187D9DBA00D1DD22 /* Fonts */,
+				D7C287E4187D8F7100D1DD22 /* Utils */,
 				D78A1CC4187AE47F0071F2AA /* Supporting Files */,
 			);
 			path = EthioTime;
@@ -153,6 +160,23 @@
 				D78A1CE8187AE4800071F2AA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D7C287E4187D8F7100D1DD22 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7C287E5187D8F8D00D1DD22 /* Utils.h */,
+				D7C287E6187D8F8D00D1DD22 /* Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D7C287E8187D9DBA00D1DD22 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D7C287E9187D9DBA00D1DD22 /* digital-7.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +227,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Gabriel Massana";
 				TargetAttributes = {
+					D78A1CB9187AE47E0071F2AA = {
+						DevelopmentTeam = X3A9998GNV;
+					};
 					D78A1CDD187AE4800071F2AA = {
 						TestTargetID = D78A1CB9187AE47E0071F2AA;
 					};
@@ -236,6 +263,7 @@
 				D78A1CD9187AE4800071F2AA /* Images.xcassets in Resources */,
 				D78A1CD1187AE4800071F2AA /* Main_iPhone.storyboard in Resources */,
 				D78A1CC8187AE47F0071F2AA /* InfoPlist.strings in Resources */,
+				D7C287EA187D9DBA00D1DD22 /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +285,7 @@
 				D78A1CD7187AE4800071F2AA /* InitialViewController.m in Sources */,
 				D78A1CCA187AE47F0071F2AA /* main.m in Sources */,
 				D78A1CCE187AE47F0071F2AA /* InitialAppDelegate.m in Sources */,
+				D7C287E7187D8F8D00D1DD22 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +422,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EthioTime/EthioTime-Prefix.pch";
 				INFOPLIST_FILE = "EthioTime/EthioTime-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DC05719E-A1D7-4E77-9C41-0276FA3CA9EA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -406,10 +438,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EthioTime/EthioTime-Prefix.pch";
 				INFOPLIST_FILE = "EthioTime/EthioTime-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DC05719E-A1D7-4E77-9C41-0276FA3CA9EA";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -475,6 +510,7 @@
 				D78A1CF1187AE4800071F2AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D78A1CF2187AE4800071F2AA /* Build configuration list for PBXNativeTarget "EthioTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +519,7 @@
 				D78A1CF4187AE4800071F2AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
