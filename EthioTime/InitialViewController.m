@@ -32,6 +32,11 @@
 @property (nonatomic, strong) UIView *labelTimeEthiopiaOccidentalTimeSeparationLine;
 @property (nonatomic, strong) UIView *labelTimeEthiopiaTimeSeparationLine;
 
+@property (nonatomic, strong) UIView *labelTimeHereBackground;
+@property (nonatomic, strong) UIView *labelTimeEthiopiaOccidentalTimeBackground;
+@property (nonatomic, strong) UIView *labelTimeEthiopiaTimeBackground;
+
+
 @property (nonatomic) BOOL timerFlag;
 
 @end
@@ -42,7 +47,7 @@
 {
     [super viewDidLoad];
 
-    [self.view setBackgroundColor:[UIColor colorWithRed:230.0f/255.0f green:230.0f/255.0f blue:230.0f/255.0f alpha:1.0f]];
+    [self.view setBackgroundColor:[UIColor colorWithRed:215.0f/255.0f green:215.0f/255.0f blue:215.0f/255.0f alpha:1.0f]];
 
     self.timerFlag = FALSE;
     
@@ -54,6 +59,24 @@
     
     CGFloat heightText= (SCREEN_HEIGHT - 20) / 3.0f;
     CGFloat widthText= SCREEN_WIDTH / 3.0f;
+    
+    
+    self.labelTimeHereBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20, SCREEN_WIDTH+2, heightText)];
+    [self.labelTimeHereBackground setBackgroundColor:[UIColor colorWithRed:245.0f/255.0f green:245.0f/255.0f blue:245.0f/255.0f alpha:1.0f]];
+    [self.view addSubview:self.labelTimeHereBackground];
+    
+    self.labelTimeEthiopiaOccidentalTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20+heightText, SCREEN_WIDTH+2, heightText)];
+    [self.labelTimeEthiopiaOccidentalTimeBackground setBackgroundColor:[UIColor colorWithRed:235.0f/255.0f green:235.0f/255.0f blue:235.0f/255.0f alpha:1.0f]];
+    [self.labelTimeEthiopiaOccidentalTimeBackground.layer setBorderColor:[UIColor lightGrayColor].CGColor];
+    [self.labelTimeEthiopiaOccidentalTimeBackground.layer setBorderWidth:1.0f];
+    [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeBackground];
+    
+    
+    self.labelTimeEthiopiaTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20+(2*heightText), SCREEN_WIDTH+2, heightText)];
+    [self.labelTimeEthiopiaTimeBackground setBackgroundColor:[UIColor colorWithRed:225.0f/255.0f green:225.0f/255.0f blue:225.0f/255.0f alpha:1.0f]];
+    [self.view addSubview:self.labelTimeEthiopiaTimeBackground];
+    
+    
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"h"];
@@ -102,21 +125,21 @@
     
     [dateFormatter setDateFormat:@"mm a"];
     
-    self.labelTimeHereMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+15, 20, widthText+widthText-10, heightText)];
+    self.labelTimeHereMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20, widthText+widthText-10, heightText)];
     [self.labelTimeHereMinutes setText:[dateFormatter stringFromDate:[NSDate date]]];
     [self.labelTimeHereMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeHereMinutes setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeHereMinutes setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeHereMinutes];
     
-    self.labelTimeEthiopiaOccidentalTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+15, 20+heightText, widthText+widthText-10, heightText)];
+    self.labelTimeEthiopiaOccidentalTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20+heightText, widthText+widthText-10, heightText)];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setText:[self getEthiopiaOccidentalTimeMinutes:[NSDate date]]];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeMinutes];
     
-    self.labelTimeEthiopiaTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+15, 20+(2*heightText), widthText+widthText-10, heightText)];
+    self.labelTimeEthiopiaTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20+(2*heightText), widthText+widthText-10, heightText)];
     [self.labelTimeEthiopiaTimeMinutes setText:[self getEthiopiaTimeMinutes:[NSDate date]]];
     [self.labelTimeEthiopiaTimeMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaTimeMinutes setTextAlignment:NSTextAlignmentLeft];
