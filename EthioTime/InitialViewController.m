@@ -57,22 +57,22 @@
                                    userInfo:nil
                                     repeats:YES];
     
-    CGFloat heightText= (SCREEN_HEIGHT - 20) / 3.0f;
+    CGFloat heightText= (SCREEN_HEIGHT) / 3.0f;
     CGFloat widthText= SCREEN_WIDTH / 3.0f;
     
     
-    self.labelTimeHereBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20, SCREEN_WIDTH+2, heightText)];
+    self.labelTimeHereBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 0, SCREEN_WIDTH+2, heightText)];
     [self.labelTimeHereBackground setBackgroundColor:[UIColor colorWithRed:245.0f/255.0f green:245.0f/255.0f blue:245.0f/255.0f alpha:1.0f]];
     [self.view addSubview:self.labelTimeHereBackground];
     
-    self.labelTimeEthiopiaOccidentalTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20+heightText, SCREEN_WIDTH+2, heightText)];
+    self.labelTimeEthiopiaOccidentalTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 0+heightText, SCREEN_WIDTH+2, heightText)];
     [self.labelTimeEthiopiaOccidentalTimeBackground setBackgroundColor:[UIColor colorWithRed:235.0f/255.0f green:235.0f/255.0f blue:235.0f/255.0f alpha:1.0f]];
     [self.labelTimeEthiopiaOccidentalTimeBackground.layer setBorderColor:[UIColor lightGrayColor].CGColor];
     [self.labelTimeEthiopiaOccidentalTimeBackground.layer setBorderWidth:1.0f];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeBackground];
     
     
-    self.labelTimeEthiopiaTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 20+(2*heightText), SCREEN_WIDTH+2, heightText)];
+    self.labelTimeEthiopiaTimeBackground = [[UIView alloc] initWithFrame:CGRectMake(-1, 0+(2*heightText), SCREEN_WIDTH+2, heightText)];
     [self.labelTimeEthiopiaTimeBackground setBackgroundColor:[UIColor colorWithRed:225.0f/255.0f green:225.0f/255.0f blue:225.0f/255.0f alpha:1.0f]];
     [self.view addSubview:self.labelTimeEthiopiaTimeBackground];
     
@@ -81,42 +81,42 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"h"];
     
-    self.labelTimeHereHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, widthText, heightText)];
+    self.labelTimeHereHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, widthText, heightText)];
     [self.labelTimeHereHour setText:[dateFormatter stringFromDate:[NSDate date]]];
     [self.labelTimeHereHour setTextColor:[UIColor blackColor]];
     [self.labelTimeHereHour setTextAlignment:NSTextAlignmentRight];
     [self.labelTimeHereHour setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeHereHour];
     
-    self.labelTimeEthiopiaOccidentalTimeHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 20+heightText, widthText, heightText)];
+    self.labelTimeEthiopiaOccidentalTimeHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 0+heightText, widthText, heightText)];
     [self.labelTimeEthiopiaOccidentalTimeHour setText:[self getEthiopiaOccidentalTimeHour:[NSDate date]]];
     [self.labelTimeEthiopiaOccidentalTimeHour setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaOccidentalTimeHour setTextAlignment:NSTextAlignmentRight];
     [self.labelTimeEthiopiaOccidentalTimeHour setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeHour];
 
-    self.labelTimeEthiopiaTimeHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 20+(2*heightText), widthText, heightText)];
+    self.labelTimeEthiopiaTimeHour = [[UILabel alloc] initWithFrame:CGRectMake(0, 0+(2*heightText), widthText, heightText)];
     [self.labelTimeEthiopiaTimeHour setText:[self getEthiopiaTimeHour:[NSDate date]]];
     [self.labelTimeEthiopiaTimeHour setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaTimeHour setTextAlignment:NSTextAlignmentRight];
     [self.labelTimeEthiopiaTimeHour setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeEthiopiaTimeHour];
     
-    self.labelTimeHereColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 20, 13, heightText)];
+    self.labelTimeHereColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 0, 13, heightText)];
     [self.labelTimeHereColon setText:@":"];
     [self.labelTimeHereColon setTextColor:[UIColor blackColor]];
     [self.labelTimeHereColon setTextAlignment:NSTextAlignmentCenter];
     [self.labelTimeHereColon setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeHereColon];
     
-    self.labelTimeEthiopiaOccidentalTimeColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 20+heightText, 13, heightText)];
+    self.labelTimeEthiopiaOccidentalTimeColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 0+heightText, 13, heightText)];
     [self.labelTimeEthiopiaOccidentalTimeColon setText:@":"];
     [self.labelTimeEthiopiaOccidentalTimeColon setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaOccidentalTimeColon setTextAlignment:NSTextAlignmentCenter];
     [self.labelTimeEthiopiaOccidentalTimeColon setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeColon];
     
-    self.labelTimeEthiopiaTimeColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 20+(2*heightText), 13, heightText)];
+    self.labelTimeEthiopiaTimeColon = [[UILabel alloc] initWithFrame:CGRectMake(widthText, 0+(2*heightText), 13, heightText)];
     [self.labelTimeEthiopiaTimeColon setText:@":"];
     [self.labelTimeEthiopiaTimeColon setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaTimeColon setTextAlignment:NSTextAlignmentCenter];
@@ -125,21 +125,21 @@
     
     [dateFormatter setDateFormat:@"mm a"];
     
-    self.labelTimeHereMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20, widthText+widthText-10, heightText)];
+    self.labelTimeHereMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 0, widthText+widthText-10, heightText)];
     [self.labelTimeHereMinutes setText:[dateFormatter stringFromDate:[NSDate date]]];
     [self.labelTimeHereMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeHereMinutes setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeHereMinutes setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeHereMinutes];
     
-    self.labelTimeEthiopiaOccidentalTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20+heightText, widthText+widthText-10, heightText)];
+    self.labelTimeEthiopiaOccidentalTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 0+heightText, widthText+widthText-10, heightText)];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setText:[self getEthiopiaOccidentalTimeMinutes:[NSDate date]]];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeEthiopiaOccidentalTimeMinutes setFont:[UIFont fontWithName:@"digital-7" size:55]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeMinutes];
     
-    self.labelTimeEthiopiaTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 20+(2*heightText), widthText+widthText-10, heightText)];
+    self.labelTimeEthiopiaTimeMinutes = [[UILabel alloc] initWithFrame:CGRectMake(widthText+13, 0+(2*heightText), widthText+widthText-10, heightText)];
     [self.labelTimeEthiopiaTimeMinutes setText:[self getEthiopiaTimeMinutes:[NSDate date]]];
     [self.labelTimeEthiopiaTimeMinutes setTextColor:[UIColor blackColor]];
     [self.labelTimeEthiopiaTimeMinutes setTextAlignment:NSTextAlignmentLeft];
@@ -148,31 +148,31 @@
     
     CGFloat heightTextTitle= (heightText / 5.5);
 
-    if (USER_INTERFACE_IDIOM == IPAD)
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == IPAD)
     {
         heightTextTitle= (heightText / 4.5);
     }
-    else if (!(USER_INTERFACE_IDIOM == IPAD) && SCREEN_HEIGHT == 480)
+    else if (!([[UIDevice currentDevice] userInterfaceIdiom] == IPAD) && SCREEN_HEIGHT == 480)
     {
         heightTextTitle= (heightText / 8);
     }
     
     
-    self.labelTimeHereText = [[UILabel alloc] initWithFrame:CGRectMake(20, 20+heightTextTitle, SCREEN_WIDTH-40, 25)];
+    self.labelTimeHereText = [[UILabel alloc] initWithFrame:CGRectMake(20, 0+heightTextTitle, SCREEN_WIDTH-40, 25)];
     [self.labelTimeHereText setText:@"Local Time"];
     [self.labelTimeHereText setTextColor:[UIColor darkGrayColor]];
     [self.labelTimeHereText setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeHereText setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:20]];
     [self.view addSubview:self.labelTimeHereText];
     
-    self.labelTimeEthiopiaOccidentalTimeText = [[UILabel alloc] initWithFrame:CGRectMake(20, 20+heightText+heightTextTitle, SCREEN_WIDTH-40, 25)];
+    self.labelTimeEthiopiaOccidentalTimeText = [[UILabel alloc] initWithFrame:CGRectMake(20, 0+heightText+heightTextTitle, SCREEN_WIDTH-40, 25)];
     [self.labelTimeEthiopiaOccidentalTimeText setText:@"Ethiopian Local Time"];
     [self.labelTimeEthiopiaOccidentalTimeText setTextColor:[UIColor darkGrayColor]];
     [self.labelTimeEthiopiaOccidentalTimeText setTextAlignment:NSTextAlignmentLeft];
     [self.labelTimeEthiopiaOccidentalTimeText setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:20]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeText];
     
-    self.labelTimeEthiopiaTimeText = [[UILabel alloc] initWithFrame:CGRectMake(20, 20+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 25)];
+    self.labelTimeEthiopiaTimeText = [[UILabel alloc] initWithFrame:CGRectMake(20, 0+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 25)];
     [self.labelTimeEthiopiaTimeText setText:@"Ethiopian 12-hour clock Time"];
     [self.labelTimeEthiopiaTimeText setTextColor:[UIColor darkGrayColor]];
     [self.labelTimeEthiopiaTimeText setTextAlignment:NSTextAlignmentLeft];
@@ -180,21 +180,21 @@
     [self.view addSubview:self.labelTimeEthiopiaTimeText];
     
     
-    self.labelTimeHereSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 20+heightTextTitle, SCREEN_WIDTH-40, 1)];
+    self.labelTimeHereSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 0+heightTextTitle, SCREEN_WIDTH-40, 1)];
     [self.labelTimeHereSeparationLine setBackgroundColor:[UIColor blackColor]];
     [self.view addSubview:self.labelTimeHereSeparationLine];
     
-    self.labelTimeEthiopiaOccidentalTimeSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 20+heightText+heightTextTitle, SCREEN_WIDTH-40, 1)];
+    self.labelTimeEthiopiaOccidentalTimeSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 0+heightText+heightTextTitle, SCREEN_WIDTH-40, 1)];
     [self.labelTimeEthiopiaOccidentalTimeSeparationLine setBackgroundColor:[UIColor blackColor]];
     [self.view addSubview:self.labelTimeEthiopiaOccidentalTimeSeparationLine];
 
     
-    self.labelTimeEthiopiaTimeSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 20+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 1)];
+    self.labelTimeEthiopiaTimeSeparationLine = [[UIView alloc] initWithFrame:CGRectMake(20, 0+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 1)];
     [self.labelTimeEthiopiaTimeSeparationLine setBackgroundColor:[UIColor blackColor]];
     [self.view addSubview:self.labelTimeEthiopiaTimeSeparationLine];
 
     
-    if (USER_INTERFACE_IDIOM == IPAD)
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == IPAD)
     {
         [self.labelTimeEthiopiaTimeText setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:35]];
         [self.labelTimeEthiopiaOccidentalTimeText setFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:35]];
@@ -214,19 +214,19 @@
         
         
         [self.labelTimeHereColon setFrame:CGRectMake(widthText, 20, 15, heightText)];
-        [self.labelTimeEthiopiaOccidentalTimeColon setFrame:CGRectMake(widthText, 20+heightText, 15, heightText)];
-        [self.labelTimeEthiopiaTimeColon setFrame:CGRectMake(widthText, 20+(2*heightText), 15, heightText)];
+        [self.labelTimeEthiopiaOccidentalTimeColon setFrame:CGRectMake(widthText, 0+heightText, 15, heightText)];
+        [self.labelTimeEthiopiaTimeColon setFrame:CGRectMake(widthText, 0+(2*heightText), 15, heightText)];
         
         
-        [self.labelTimeHereText setFrame:CGRectMake(20, 20+heightTextTitle, SCREEN_WIDTH-40, 40)];
-        [self.labelTimeEthiopiaOccidentalTimeText setFrame:CGRectMake(20, 20+heightText+heightTextTitle, SCREEN_WIDTH-40, 40)];
-        [self.labelTimeEthiopiaTimeText setFrame:CGRectMake(20, 20+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 40)];
+        [self.labelTimeHereText setFrame:CGRectMake(20, 0+heightTextTitle, SCREEN_WIDTH-40, 40)];
+        [self.labelTimeEthiopiaOccidentalTimeText setFrame:CGRectMake(20, 0+heightText+heightTextTitle, SCREEN_WIDTH-40, 40)];
+        [self.labelTimeEthiopiaTimeText setFrame:CGRectMake(20, 0+(2*heightText)+heightTextTitle, SCREEN_WIDTH-40, 40)];
         
     }
     
 }
 
--(NSUInteger)supportedInterfaceOrientations
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown);
 }

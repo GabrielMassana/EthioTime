@@ -13,7 +13,8 @@
 #define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-#define USER_INTERFACE_IDIOM    UI_USER_INTERFACE_IDIOM()
+//#define UI_USER_INTERFACE_IDIOM() \ ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] ? \ [[UIDevice currentDevice] userInterfaceIdiom] : \ UIUserInterfaceIdiomPhone)
+
 #define IPAD                    UIUserInterfaceIdiomPad
 
 @end
