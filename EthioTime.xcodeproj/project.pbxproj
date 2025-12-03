@@ -7,22 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AAF7AE02EE0329800CDA518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF7ADF2EE0329800CDA518 /* ViewController.swift */; };
+		7AAF7AE12EE0329800CDA518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAF7ADE2EE0329800CDA518 /* AppDelegate.swift */; };
 		D78A1CBE187AE47E0071F2AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CBD187AE47E0071F2AA /* Foundation.framework */; };
 		D78A1CC0187AE47E0071F2AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CBF187AE47E0071F2AA /* CoreGraphics.framework */; };
 		D78A1CC2187AE47E0071F2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CC1187AE47E0071F2AA /* UIKit.framework */; };
 		D78A1CC8187AE47F0071F2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CC6187AE47F0071F2AA /* InfoPlist.strings */; };
-		D78A1CCA187AE47F0071F2AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A1CC9187AE47F0071F2AA /* main.m */; };
-		D78A1CCE187AE47F0071F2AA /* InitialAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A1CCD187AE47F0071F2AA /* InitialAppDelegate.m */; };
-		D78A1CD1187AE4800071F2AA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CCF187AE47F0071F2AA /* Main_iPhone.storyboard */; };
-		D78A1CD4187AE4800071F2AA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CD2187AE4800071F2AA /* Main_iPad.storyboard */; };
-		D78A1CD7187AE4800071F2AA /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A1CD6187AE4800071F2AA /* InitialViewController.m */; };
 		D78A1CD9187AE4800071F2AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CD8187AE4800071F2AA /* Images.xcassets */; };
-		D78A1CE0187AE4800071F2AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CDF187AE4800071F2AA /* XCTest.framework */; };
 		D78A1CE1187AE4800071F2AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CBD187AE47E0071F2AA /* Foundation.framework */; };
 		D78A1CE2187AE4800071F2AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78A1CC1187AE47E0071F2AA /* UIKit.framework */; };
 		D78A1CEA187AE4800071F2AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D78A1CE8187AE4800071F2AA /* InfoPlist.strings */; };
 		D78A1CEC187AE4800071F2AA /* EthioTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D78A1CEB187AE4800071F2AA /* EthioTimeTests.m */; };
-		D7C287E7187D8F8D00D1DD22 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C287E6187D8F8D00D1DD22 /* Utils.m */; };
 		D7C287EA187D9DBA00D1DD22 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7C287E9187D9DBA00D1DD22 /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
@@ -37,28 +32,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7AAF7ADE2EE0329800CDA518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AAF7ADF2EE0329800CDA518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D78A1CBA187AE47E0071F2AA /* EthioTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthioTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78A1CBD187AE47E0071F2AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D78A1CBF187AE47E0071F2AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D78A1CC1187AE47E0071F2AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D78A1CC5187AE47F0071F2AA /* EthioTime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EthioTime-Info.plist"; sourceTree = "<group>"; };
 		D78A1CC7187AE47F0071F2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D78A1CC9187AE47F0071F2AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D78A1CCB187AE47F0071F2AA /* EthioTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthioTime-Prefix.pch"; sourceTree = "<group>"; };
-		D78A1CCC187AE47F0071F2AA /* InitialAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialAppDelegate.h; sourceTree = "<group>"; };
-		D78A1CCD187AE47F0071F2AA /* InitialAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialAppDelegate.m; sourceTree = "<group>"; };
-		D78A1CD0187AE47F0071F2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		D78A1CD3187AE4800071F2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		D78A1CD5187AE4800071F2AA /* InitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
-		D78A1CD6187AE4800071F2AA /* InitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		D78A1CD8187AE4800071F2AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D78A1CDE187AE4800071F2AA /* EthioTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthioTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D78A1CDF187AE4800071F2AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D78A1CE7187AE4800071F2AA /* EthioTimeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EthioTimeTests-Info.plist"; sourceTree = "<group>"; };
 		D78A1CE9187AE4800071F2AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D78A1CEB187AE4800071F2AA /* EthioTimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthioTimeTests.m; sourceTree = "<group>"; };
-		D7C287E5187D8F8D00D1DD22 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Utils/Utils.h; sourceTree = "<group>"; };
-		D7C287E6187D8F8D00D1DD22 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = Utils/Utils.m; sourceTree = "<group>"; };
 		D7C287E9187D9DBA00D1DD22 /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D78A1CE0187AE4800071F2AA /* XCTest.framework in Frameworks */,
 				D78A1CE2187AE4800071F2AA /* UIKit.framework in Frameworks */,
 				D78A1CE1187AE4800071F2AA /* Foundation.framework in Frameworks */,
 			);
@@ -111,7 +96,6 @@
 				D78A1CBD187AE47E0071F2AA /* Foundation.framework */,
 				D78A1CBF187AE47E0071F2AA /* CoreGraphics.framework */,
 				D78A1CC1187AE47E0071F2AA /* UIKit.framework */,
-				D78A1CDF187AE4800071F2AA /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,12 +103,8 @@
 		D78A1CC3187AE47E0071F2AA /* EthioTime */ = {
 			isa = PBXGroup;
 			children = (
-				D78A1CCC187AE47F0071F2AA /* InitialAppDelegate.h */,
-				D78A1CCD187AE47F0071F2AA /* InitialAppDelegate.m */,
-				D78A1CCF187AE47F0071F2AA /* Main_iPhone.storyboard */,
-				D78A1CD2187AE4800071F2AA /* Main_iPad.storyboard */,
-				D78A1CD5187AE4800071F2AA /* InitialViewController.h */,
-				D78A1CD6187AE4800071F2AA /* InitialViewController.m */,
+				7AAF7ADE2EE0329800CDA518 /* AppDelegate.swift */,
+				7AAF7ADF2EE0329800CDA518 /* ViewController.swift */,
 				D78A1CD8187AE4800071F2AA /* Images.xcassets */,
 				D7C287E8187D9DBA00D1DD22 /* Fonts */,
 				D7C287E4187D8F7100D1DD22 /* Utils */,
@@ -138,8 +118,6 @@
 			children = (
 				D78A1CC5187AE47F0071F2AA /* EthioTime-Info.plist */,
 				D78A1CC6187AE47F0071F2AA /* InfoPlist.strings */,
-				D78A1CC9187AE47F0071F2AA /* main.m */,
-				D78A1CCB187AE47F0071F2AA /* EthioTime-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,8 +143,6 @@
 		D7C287E4187D8F7100D1DD22 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D7C287E5187D8F8D00D1DD22 /* Utils.h */,
-				D7C287E6187D8F8D00D1DD22 /* Utils.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -229,6 +205,7 @@
 				TargetAttributes = {
 					D78A1CB9187AE47E0071F2AA = {
 						DevelopmentTeam = X3A9998GNV;
+						LastSwiftMigration = 1640;
 						ProvisioningStyle = Manual;
 					};
 					D78A1CDD187AE4800071F2AA = {
@@ -260,9 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D78A1CD4187AE4800071F2AA /* Main_iPad.storyboard in Resources */,
 				D78A1CD9187AE4800071F2AA /* Images.xcassets in Resources */,
-				D78A1CD1187AE4800071F2AA /* Main_iPhone.storyboard in Resources */,
 				D78A1CC8187AE47F0071F2AA /* InfoPlist.strings in Resources */,
 				D7C287EA187D9DBA00D1DD22 /* digital-7.ttf in Resources */,
 			);
@@ -283,10 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D78A1CD7187AE4800071F2AA /* InitialViewController.m in Sources */,
-				D78A1CCA187AE47F0071F2AA /* main.m in Sources */,
-				D78A1CCE187AE47F0071F2AA /* InitialAppDelegate.m in Sources */,
-				D7C287E7187D8F8D00D1DD22 /* Utils.m in Sources */,
+				7AAF7AE02EE0329800CDA518 /* ViewController.swift in Sources */,
+				7AAF7AE12EE0329800CDA518 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,22 +288,6 @@
 				D78A1CC7187AE47F0071F2AA /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D78A1CCF187AE47F0071F2AA /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D78A1CD0187AE47F0071F2AA /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		D78A1CD2187AE4800071F2AA /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D78A1CD3187AE4800071F2AA /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		D78A1CE8187AE4800071F2AA /* InfoPlist.strings */ = {
@@ -450,19 +407,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development: Jose Antonio Gabriel Massana (RZ6U6PZLU3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jose Antonio Gabriel Massana (X3A9998GNV)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3A9998GNV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EthioTime/EthioTime-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "EthioTime/EthioTime-Info.plist";
-				MARKETING_VERSION = 2.0.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ethio.time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "Ethio Time";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,19 +434,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development: Jose Antonio Gabriel Massana (RZ6U6PZLU3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jose Antonio Gabriel Massana (X3A9998GNV)";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X3A9998GNV;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EthioTime/EthioTime-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "EthioTime/EthioTime-Info.plist";
-				MARKETING_VERSION = 2.0.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Gabriel-Massana.ethio.time";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "Ethio Time";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
